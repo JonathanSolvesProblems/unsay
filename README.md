@@ -2,12 +2,19 @@
 
 **An AI medication-safety agent that goes back and un-says what it told you.**
 
+> **2nd place, CockroachDB × AWS Hackathon: Build with Agentic Memory**
+> (3,700 participants). The hosted demo has been retired: it ran on a
+> CockroachDB Cloud cluster that was torn down when judging closed, because a
+> paid database left running past a hackathon is how you get a surprise bill.
+> Its URL now serves an [archive page](https://dzcqeaznqrb2dwvy3h4btiavrm0etzef.lambda-url.us-east-1.on.aws/).
+> Everything below still runs: [TESTING.md](TESTING.md) rebuilds the whole
+> thing from a clean clone against live openFDA data.
+
 **[Watch the 2:34 demo](https://www.youtube.com/watch?v=UiWwvPHfN3A)**
-· **[Live demo](https://dzcqeaznqrb2dwvy3h4btiavrm0etzef.lambda-url.us-east-1.on.aws/)**
 · [write-up](https://jonathanandrei.com/blog/unsay-agent-memory-cockroachdb-bitemporal-fda-recalls/)
-· [health](https://dzcqeaznqrb2dwvy3h4btiavrm0etzef.lambda-url.us-east-1.on.aws/api/health)
-· AWS Lambda in front of a CockroachDB Cloud cluster holding 554 live openFDA
-claims. First request after a quiet spell pays a cold start of a few seconds.
+· [the submission](https://devpost.com/software/unsay)
+· Recorded against AWS Lambda in front of a CockroachDB Cloud cluster holding
+554 live openFDA claims.
 
 Ask it whether your prescription is safe and it answers from live FDA data.
 The part that matters comes later: when the FDA recalls that drug next

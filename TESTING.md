@@ -12,15 +12,18 @@ only be done one way, that is said rather than implied.
 
 ---
 
-## 1. Zero setup: the hosted demo (~2 minutes)
+## 1. Zero setup: the hosted demo (RETIRED)
 
-**<https://dzcqeaznqrb2dwvy3h4btiavrm0etzef.lambda-url.us-east-1.on.aws/>**
+> **This section no longer runs.** The hosted demo was Lambda in front of a
+> CockroachDB Cloud cluster holding 554 live openFDA claims, and that cluster
+> was deleted when judging closed. Its URL now serves an archive page. The
+> walkthrough is kept below because the
+> [2:34 demo video](https://www.youtube.com/watch?v=UiWwvPHfN3A) is a recording
+> of exactly these steps against exactly this data, so it is still the fastest
+> way to see what the numbers in section 3 mean. To run it yourself, start at
+> section 2 and use `scripts/seed_demo.py` to rebuild the scenario locally.
 
-Lambda in front of a CockroachDB Cloud cluster holding 554 live openFDA claims.
-The first request after a quiet spell pays a cold start of a few seconds; that
-is Lambda waking, not the database.
-
-Walk the four numbered steps on the page, in order:
+What the four numbered steps did, in order:
 
 | Step | Do | Expect |
 |---|---|---|

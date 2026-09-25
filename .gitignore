@@ -61,3 +61,7 @@ _videos/
 *.webm
 demo.mp4
 *.edit-plan.json
+
+# Scratch HTML captured while checking the Devpost gallery
+dp.html
+g.html
